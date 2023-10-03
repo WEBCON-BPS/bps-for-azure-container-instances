@@ -10,32 +10,38 @@ The created services are available on the Internet, the solution is intended to 
 
 # Quick start:
 1. Pull repo.
-`git clone https://github.com/webcon-bps/bps-for-azure-container-instances.git`
+   
+        git clone https://github.com/webcon-bps/bps-for-azure-container-instances.git
 
-2. Create Azure deployment.
-    Go to solution directory:
-    `cd .\bps-for-azure-container-instances\`
+3. Create Azure deployment.
+   Go to solution directory:
 
-    Make sh files executable: 
-    `chmod u+x *.sh`
+       cd .\bps-for-azure-container-instances\
+
+    Make sh files executable:
+   
+        chmod u+x *.sh
 
     Start deployment:
-    `./create.sh`
 
-        Several Azure resources will be created: aci for SQL Server, SOLR, Caddy, bps-init, bps-portal, 
-        bps-service, storage account for persisting data. 
-        The first run time is approximately 15 minutes (due to the need to download docker images and initialize the BPS databases). 
+       ./create.sh
 
-3. Once all services are launched, you can access the BPS Portal using the address displayed in Shell. The BPS Admin password is: `P@ssw0rd1`
+   Several Azure resources will be created: aci for SQL Server, SOLR, Caddy, bps-init, bps-portal, bps-service, storage account for persisting data. 
+   The first run time is approximately 15 minutes (due to the need to download docker images and initialize the BPS databases). 
 
-4. Stop services
-`./stop.sh`
+5. Once all services are launched, you can access the BPS Portal using the address displayed in Shell. The BPS Admin password is: `P@ssw0rd1`
 
-5. Start services
-`./start.sh`
+6. Stop services
 
-6. Remove all services and persistent data
-`./remove.sh`
+       ./stop.sh
+
+8. Start services
+
+       ./start.sh
+
+9. Remove all services and persistent data
+
+        ./remove.sh
 
 # Port reservations
 All services are available from internet, ports used:
