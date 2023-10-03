@@ -16,7 +16,7 @@ The created services are available on the Internet, the solution is intended to 
 3. Create Azure deployment.
    Go to solution directory:
 
-       cd .\bps-for-azure-container-instances\
+       cd bps-for-azure-container-instances
 
     Make sh files executable:
    
