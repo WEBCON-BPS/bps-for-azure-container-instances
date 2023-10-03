@@ -13,14 +13,18 @@ The created services are available on the Internet, the solution is intended to 
 `git clone https://github.com/webcon-bps/bps-for-azure-container-instances.git`
 
 2. Create Azure deployment.
-`cd .\bps-for-azure-container-instances\`
+    Go to solution directory:
+    `cd .\bps-for-azure-container-instances\`
 
-Make sh files executable: `chmod u+x *.sh`
+    Make sh files executable: 
+    `chmod u+x *.sh`
 
-`./create.sh`
+    Start deployment:
+    `./create.sh`
 
-    Several Azure resources will be created: aci for SQL Server, SOLR, Caddy, bps-init, bps-portal, bps-service, storage account for persisting data. 
-    The first run time is approximately 15 minutes (due to the need to download docker images and initialize the BPS databases). 
+        Several Azure resources will be created: aci for SQL Server, SOLR, Caddy, bps-init, bps-portal, 
+        bps-service, storage account for persisting data. 
+        The first run time is approximately 15 minutes (due to the need to download docker images and initialize the BPS databases). 
 
 3. Once all services are launched, you can access the BPS Portal using the address displayed in Shell. The BPS Admin password is: `P@ssw0rd1`
 
